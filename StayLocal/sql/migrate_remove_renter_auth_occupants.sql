@@ -1,0 +1,6 @@
+USE staylocal_update;
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS unit_occupants;
+DROP TABLE IF EXISTS users;
+SET FOREIGN_KEY_CHECKS = 1;
+ALTER TABLE reservations DROP COLUMN occupants;
